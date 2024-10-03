@@ -14,13 +14,13 @@ interface DefaultValues {
   test: TestValue[];
 }
 
-let i = 0;
+let mockId = 0;
 
-jest.mock('../../logic/generateId', () => () => String(i++));
+jest.mock('../../logic/generateId', () => () => String(mockId++));
 
 describe('replace', () => {
   beforeEach(() => {
-    i = 0;
+    mockId = 0;
   });
 
   it('should replace fields correctly', () => {

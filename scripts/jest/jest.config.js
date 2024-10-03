@@ -15,7 +15,7 @@ const web = {
   },
   testMatch: ['**/__tests__/**/*.(spec|test).ts?(x)'],
   transform: {
-    '^.+\\.tsx?$': '@swc/jest',
+    '^.+\\.tsx?$': 'babel-jest',
     '^.+\\.(css|scss|sass)$': 'jest-preview/transforms/css',
     '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)':
       'jest-preview/transforms/file',
@@ -35,7 +35,7 @@ const server = {
   },
   testMatch: ['**/+([a-zA-Z]).server.(spec|test).ts?(x)'],
   transform: {
-    '^.+\\.tsx?$': '@swc/jest',
+    '^.+\\.tsx?$': 'babel-jest',
   },
   testEnvironment: 'node',
 };

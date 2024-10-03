@@ -72,7 +72,9 @@
   "author": "<bluebill1049@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.25.7",
     "@microsoft/api-extractor": "^7.47.0",
+    "@react-native/babel-preset": "^0.75.4",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
