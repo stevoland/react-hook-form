@@ -157,5 +157,14 @@ export function useForm<
   _formControl.current.formState = getProxyFormState(formState, control);
   _formControl.current.watch = _formControl.current.watch.bind({});
 
+  React.useEffect(() => {
+    if (!_formControl.current) {
+      return;
+    }
+    _formControl.current = {
+      ..._formControl.current,
+    };
+  }, [formState]);
+
   return _formControl.current;
 }
