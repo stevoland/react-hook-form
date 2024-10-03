@@ -5,6 +5,10 @@ const jestDefaultConfig = {
   rootDir: '.',
   roots: ['<rootDir>/src'],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
+  moduleNameMapper: {
+    'react-compiler-runtime-polyfill':
+      '<rootDir>/scripts/jest/react-compiler-runtime-polyfill.js',
+  },
 };
 
 const web = {
